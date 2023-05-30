@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #here{
+            border: 2px solid black;
+            text-align: center;
+            border-style: none;
+        }
+        
+        ul{
+            list-style:none;
+        }
+        div{
+            /* margin-left: 0px; */
+            text-align: center;
+            
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="txt" placeholder="Title">
+        <br>
+        <input type="text" id="des" placeholder="Desription">
+        <br>
+       <input type="text" name="" id="image" placeholder="Image link"> 
+       <br>
+        <button onclick="show()">
+            click here
+        </button>
+    </div> 
+  <ul id="here">
+
+  </ul>
+
+
+
+
+<!-- <button onclick="up()">Up pic</button>
+<button onclick="down()">Down pic</button>
+ -->
+
+
+
+
+
+<script>
+
+   
+    function show(){
+        
+        let inp = document.getElementById("txt").value
+    let desc = document.getElementById("des").value
+    let im = document.getElementById("image").value
+    
+document.getElementById("here").innerHTML =
+`<li><h1>${inp}</h1></li>
+<li><img src="${im}" alt=""></li>
+<li><p>${desc}</p></li>
+`
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
